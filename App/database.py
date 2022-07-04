@@ -8,13 +8,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from .config import settings
 
-# SQLALCHEMY_DATABASE_URL = "postgresql://user:password@postgresserver/db"
-# user = os.environ.get('user')
-# password = os.environ.get('password')
-# postgresserver = os.environ.get('postgresserver')
-# db = os.environ.get('db')
-
-# SQLALCHEMY_DATABASE_URL = f"postgresql://allgift:Matt6:33@localhost/fastapi"
 SQLALCHEMY_DATABASE_URL = f"postgresql://{settings.database_username}:" \
                           f"{settings.database_password}@{settings.database_hostname}/{settings.database_name}"
 
