@@ -36,4 +36,4 @@ while True:
     except Exception as error:
         print("Connecting to database failed")
         print("Error was", error)
-        time.sleep(2)
+        # time.sleep(2)
