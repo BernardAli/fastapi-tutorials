@@ -1,4 +1,5 @@
 import os
+import sys
 from datetime import time
 
 import psycopg2
@@ -36,4 +37,5 @@ while True:
     except Exception as error:
         print("Connecting to database failed")
         print("Error was", error)
-        # time.sleep(2)
+        time.sleep(2)
+        sys.stdout.flush()
